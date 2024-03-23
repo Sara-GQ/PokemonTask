@@ -1,1 +1,1 @@
-Base_url='https://pokeapi.co/api/v2/pokemon/'
+BASE_URL='https://pokeapi.co/api/v2/pokemon/'
