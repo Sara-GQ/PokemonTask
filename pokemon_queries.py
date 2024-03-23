@@ -5,7 +5,9 @@ session = config.DB_SESSION
 
 
 def insert_data(data):
-
+   """
+   function to import data to db
+   """
    emp_details = Pokemon(
       pokemon_name= data['name'][:100],
       species= data['species'][:500],
