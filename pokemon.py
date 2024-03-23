@@ -6,6 +6,8 @@ from pokemon_queries import insert_data
 #Send a GET request to the PokeAPI endpoint for retrieving information about Pokemon
 
 def populate_pokemon_data(url=None):
+    
+    # if url is specified, use that else use the default url
     if url:
         response = requests.get(url=url)
     else:
@@ -82,6 +84,8 @@ def populate_pokemon_data(url=None):
 
         return next_url
 
+
+# driver code
 next_url = None
 for i in range(20):
     if next_url:

@@ -1,17 +1,8 @@
 from pokemon_model import Pokemon 
-from rest_framework.response import Response
 import config
 
 session = config.DB_SESSION
 
-# def post(self, request):
-      
-#        data = request.data
-#        result = insert_data(data)
-#        if result:
-#           return Response ({'data': data, 'message': 'data saved success'})
-#        else:
-#           return Response("error")
 
 def insert_data(data):
 
