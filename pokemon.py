@@ -47,7 +47,6 @@ def populate_pokemon_data(url=None):
                 for move in details.get("moves"):  
                     pokemon_moves.append(move.get("move").get("name"))
 
-                print(", ".join(pokemon_moves), end='\n\n')
                 pokemon_moves = ", ".join(pokemon_moves)
 
                 # fetch pokemon species data
